@@ -40,17 +40,23 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="max-container flex min-h-screen w-full flex-col justify-center gap-10 bg-cover bg-center bg-no-repeat"
+      className="flex min-h-screen w-full flex-col justify-center gap-10 bg-cover bg-center bg-no-repeat"
       style={{ background: `url(${background})`, backgroundSize: "contain" }}
     >
       <div className="relative flex w-full items-start justify-center pt-28">
-        <p className="justify-center font-montserrat text-xl">{text}</p>
+        <p
+          className={`justify-center font-montserrat text-3xl text-white ${text === "Imagintree" ? "text-6xl font-pastel lg:text-8xl" : ""}`}
+        >
+          {text}
+        </p>
       </div>
       <div className="relative flex w-full items-start justify-center">
         {!showWeCreate ? (
-          <p className="justify-center font-montserrat text-xl">{subText}</p>
+          <p className="justify-center font-montserrat text-3xl text-white">
+            {subText}
+          </p>
         ) : (
-          <p className="justify-center font-montserrat text-xl">
+          <p className="justify-center font-montserrat text-3xl text-white">
             We create <span className={`${color}`}>{subText}</span>
           </p>
         )}

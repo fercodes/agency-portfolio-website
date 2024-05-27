@@ -1,3 +1,5 @@
 import Navbar from "./Navbar";
+import PortfolioCard from "./PortfolioCard";
+import PricingCard from "./PricingCard";
 
-export { Navbar };
+export { Navbar, PortfolioCard, PricingCard };

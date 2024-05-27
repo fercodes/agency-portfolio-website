@@ -1,13 +1,14 @@
 import { Navbar } from "./components";
-import { Hero } from "./sections";
+import { Hero, AboutUs, Projects, Services } from "./sections";
+
 const App = () => {
   return (
     <main className="relative">
       <Navbar />
       <Hero />
-      <section>About us</section>
-      <section>Projects</section>
-      <section>Services</section>
+      <AboutUs />
+      <Projects />
+      <Services />
       <section>Contact</section>
       <section>Footer</section>
     </main>
